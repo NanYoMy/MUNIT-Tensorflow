@@ -9,6 +9,7 @@ import numpy as np
 import copy
 try:
     _imread = scipy.misc.imread
+    print("load scipy imread")
 except AttributeError:
     from imageio import imread as _imread
 
