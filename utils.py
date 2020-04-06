@@ -7,12 +7,7 @@ import pprint
 import scipy.misc
 import numpy as np
 import copy
-try:
-    _imread = scipy.misc.imread
-    print("load scipy imread")
-except AttributeError:
-    print('AttributeError')
-    from imageio import imread as _imread
+from imageio import imread as _imread
 
 pp = pprint.PrettyPrinter()
 
@@ -87,7 +82,7 @@ def imread(path, is_grayscale = False):
     if (is_grayscale):
         return _imread(path, flatten=True).astype(np.float)
     else:
-        return _imread(path, mode='RGB').astype(np.float)
+        return _imread(path, pilmode='RGB').astype(np.float)
 
 def merge_images(images, size):
     return inverse_transform(images)
