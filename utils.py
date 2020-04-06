@@ -11,6 +11,7 @@ try:
     _imread = scipy.misc.imread
     print("load scipy imread")
 except AttributeError:
+    print('AttributeError')
     from imageio import imread as _imread
 
 pp = pprint.PrettyPrinter()
