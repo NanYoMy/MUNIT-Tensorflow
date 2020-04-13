@@ -7,7 +7,7 @@ def parse_args():
     desc = "Tensorflow implementation of MUNIT"
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('--phase', type=str, default='train', help='train or test or guide')
-    parser.add_argument('--dataset', type=str, default='summer2winter', help='dataset_name')
+    parser.add_argument('--dataset', type=str, default='summer2winter_yosemite', help='dataset_name')
     parser.add_argument('--augment_flag', type=bool, default=False, help='Image augmentation use or not')
 
     parser.add_argument('--epoch', type=int, default=10, help='The number of epochs to run')
