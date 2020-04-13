@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J cycle-gan
+#SBATCH -J mnuint
 #SBATCH -p gpu
 #SBATCH -w node02.chess
 #SBATCH --gres=gpu:2
