@@ -10,7 +10,6 @@ nvidia-smi -L
 echo $CUDA_VISIBLE_DEVICES
 hostname
 
-
 /home/tens/wx518/anaconda3/envs/dwb_tensorflow/bin/python ./main.py
 
 
