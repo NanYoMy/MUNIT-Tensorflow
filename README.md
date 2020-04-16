@@ -79,3 +79,8 @@ Simple Tensorflow implementation of ["Multimodal Unsupervised Image-to-Image Tra
 
 ## Author
 Junho Kim
+
+
+## result visulization
+tensorboard --logdir H:\cross_modality_MAS\MUNIT-Tensorflow\logs\MUNIT_summer2win
+ter_yosemite_lsgan
