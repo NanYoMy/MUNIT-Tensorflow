@@ -24,6 +24,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+./.idea/
+./__pycache__
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -99,3 +101,15 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea/
+datasets/summer2winter_yosemite/trainA/2016-07-16 08_13_48.jpg
+.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+/datasets
+/.idea
+/logs
+/samples
+/result
+/imgs
