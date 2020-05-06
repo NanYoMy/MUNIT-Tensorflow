@@ -1,5 +1,5 @@
-from ops import *
-from utils import *
+from munit.ops import *
+from munit.utils import *
 from glob import glob
 import time
 from tensorflow.contrib.data import batch_and_drop_remainder
@@ -294,6 +294,7 @@ class MUNIT(object) :
 
         real_A_logit, real_B_logit = self.discriminate_real(self.domain_A, self.domain_B)
         fake_A_logit, fake_B_logit = self.discriminate_fake(x_ba, x_ab)
+
 
         """ Define Loss """
         G_ad_loss_a = generator_loss(self.gan_type, fake_A_logit)

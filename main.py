@@ -1,6 +1,6 @@
-from MUNIT import MUNIT
+from munit.MUNIT import MUNIT
 import argparse
-from utils import *
+from munit.utils import *
 
 """parsing and configuration"""
 def parse_args():

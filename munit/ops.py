@@ -1,6 +1,6 @@
 import tensorflow as tf
 import tensorflow.contrib as tf_contrib
-from utils import pytorch_kaiming_weight_factor
+from munit.utils import pytorch_kaiming_weight_factor
 
 factor, mode, uniform = pytorch_kaiming_weight_factor(a=0.0, uniform=False)
 weight_init = tf_contrib.layers.variance_scaling_initializer(factor=factor, mode=mode, uniform=uniform)
