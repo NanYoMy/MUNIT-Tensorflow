@@ -98,7 +98,7 @@ class MUNIT(object) :
             for i in range(2) :
                 x = conv(x, channel*2, kernel=4, stride=2, pad=1, pad_type='reflect', scope='conv_'+str(i+1))
                 x = relu(x)
-
+ 
                 channel = channel * 2
 
             for i in range(2) :
